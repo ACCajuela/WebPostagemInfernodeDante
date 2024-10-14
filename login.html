@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Inferno</title>
+    <link rel="icon" href="imagens/iconeInferno.jpg" />
+    <link rel="stylesheet" href="login.css" />
+  </head>
+  <body>
+    <div class="container-conteudo">
+      <div class="cabecalho">
+        <h1>Inferno</h1>
+      </div>
+
+      <h2 class="tituloLog">LOGIN</h2>
+      <form action="login.php" method="POST">
+        <div class="login">
+          <label for="usuario" class="usuario">Usuário: </label>
+          <input type="text" id="usuario" name="usuario" required /> <br />
+          <label for="email" class="email">Email: </label>
+          <input type="email" id="email" name="email" required /> <br />
+          <label for="senha" class="senha">Senha: </label>
+          <input type="password" id="senha" name="senha" required /> <br />
+        </div>
+        <button type="submit" class="btn-login" href="postagens.php">
+          Entrar
+        </button>
+        <a class="btn-cadastro" href="cadastro.html">Cadastrar</a>
+      </form>
+      <br>
+      <a class="btn-voltar" href="home.html">Voltar</a>
+    </div>
+  </body>
+  <footer class="rodape">
+    <h3>Autores:</h3>
+    <p>Alícia Ribeiro</p>
+    <p>Ana Cajuela</p>
+    <p>Anthenor Fernandes</p>
+    <p>Rillory Teodora</p>
+    <p>Victor Murta</p>
+  </footer>
+</html>

@@ -1,0 +1,819 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Inferno</title>
+    <link rel="stylesheet" href="home.css" />
+    <link rel="icon" href="imagens/iconeInferno.jpg" />
+  </head>
+
+  <!-- SCRIPT DO POP-UP -->
+  <script>
+    function showModal(modalId) {
+      var element = document.getElementById(modalId);
+      element.classList.add("show-modal");
+    }
+
+    function hideModal(modalId) {
+      var element = document.getElementById(modalId);
+      element.classList.remove("show-modal");
+    }
+  </script>
+
+  <!-- BODY -->
+  <body>
+    <div class="container-conteudo">
+      <div class="cabecalho">
+        <h1>Inferno</h1>
+      </div>
+
+      <img
+        class="frase-Dante"
+        src="imagens/fraseDanteB.png"
+        alt="Frase de Dante Alighieri"
+      />
+
+      <!-- DESCRIÇÃO GERAL -->
+      <div class="geral">
+        <p>
+          A ordem natural do inferno é que seus condenados permaneçam sofrendo
+          até que suas almas sumam. Porém, de tempos em tempos, surgem aqueles
+          que ousam desafiar seus destinos. Escapam de seus círculos até o
+          Limbo, buscando por um alívio. Descobrem apenas a dura realidade do
+          vazio. No Limbo o tempo roubará até o pouco que conquistaram. Só lhes
+          resta escapar pelo primeiro círculo. Bastará conquistar todas as peças
+          que o inferno esconde. Não se sabe quem foi o primeiro a tentar, mas a
+          certeza é que ninguém nunca saiu. Ela sempre os espera no último
+          círculo. Os protetores dos círculos não podem ser mais do que
+          atordoados enquanto descobrem como escapar pelos portões!
+        </p>
+      </div>
+
+      <!-- DESCRIÇÃO DO LIMBO -->
+      <div class="limbo">
+        <img src="imagens/limbo.png" alt="Limbo" />
+        <div class="limbo-texto">
+          <h2>Limbo</h2>
+          <p>
+            Lar daqueles que, mesmo nobres, não conheceram a palavra de Deus.
+            Aqui não há demônios para a tortura. Em primeiro momento soa como um
+            alento para os condenados de outros círculos. Mas basta que o tempo
+            se mostre dono de tudo e leve deles suas lembranças. Aqui a ausência
+            de tudo faz morada.
+          </p>
+        </div>
+      </div>
+
+      <!-- REGRAS E OBJETIVOS E LEGENDAS -->
+      <div class="regras-legenda">
+        <div class="regras">
+          <button
+            class="btn-card btn-regras"
+            onclick="showModal('regrasmodal')"
+          >
+            Regras e Objetivos
+          </button>
+
+          <div class="modal" id="regrasmodal">
+            <div class="modal-content">
+              <span onclick="hideModal('regrasmodal')">&times;</span>
+              <h1 id="modal-title">Regras e Objetivos</h1>
+              <h2>Regras</h2>
+              <p>
+                <strong>Sobre Vida:</strong> Vida só pode ser recuperada por
+                cura (via Heresia), exceto a Gula que se cura também pela sua
+                Violação. Se chegar a 0 de vida, sua alma é destruída por
+                completo. <br /><br />
+                <strong>Sobre Vitalidade:</strong> Vitalidade recebe bônus de +5
+                a +15 no fim de cada círculo a depender do desempenho (Ela
+                decide). Exceto a Violência que pode se vitalizar por meio da
+                brutalidade. <br /><br />
+                <strong>Sobre Armas:</strong> Todos podem ter uma arma a ser
+                aprovada, ou objeto que faça sentido com o seu personagem.
+                Excesso Traição que tem uma mascote e Heresia que carrega uma
+                bolsa de vida com capacidade máxima de +100 de vida (Se perder
+                se fudeu). <br /><br />
+                <strong>Sobre Visual:</strong> Pelo visual está liberado tudo.
+                Pode ir até nu. Nomes que eu possa falar depois de umas
+                cervejas. <br /><br />
+                <strong>Sobre Agressão Mútua:</strong> A habilidade de quem
+                ataca contra a Resistência de quem é atacado. <br /><br />
+                <strong>Sobre Dados:</strong> Será girado um D20 tranquilo.
+                Sendo 1 erro crítico. E 20 acerto crítico. <br /><br />
+                <strong>MISTERIO I:</strong> Há algo de poderoso e especial que
+                um de vocês pode ter. Vale apenas para o primeiro. Sejam bons
+                jogadores e sortudos. <br /><br />
+                <strong>MISTERIO II:</strong> Há algo escondido sobre Ela. Se
+                for entendido, haverá vantagem no combate final.
+              </p>
+              <h2>Objetivos</h2>
+              <p>
+                Os protetores dos círculos não podem ser mais do que atordoados
+                enquanto descobrem como escapar pelos portões! Vocês serão
+                submetidos a charada para abrir cada portão. E enquanto aqueles
+                que melhor lutam irão atordoar os demônios, os mais inteligentes
+                abrem passagem. Desçam até as profundezas para encontrar a saída
+                e se vingarem Dela.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <div class="legenda">
+          <button
+            class="btn-card btn-legenda"
+            onclick="showModal('legendamodal')"
+          >
+            Legenda
+          </button>
+
+          <div class="modal" id="legendamodal">
+            <div class="modal-content">
+              <span onclick="hideModal('legendamodal')">&times;</span>
+              <h1 id="modal-title">Legenda</h1>
+              <p>
+                <strong>Condenados/Pecadores</strong> Mesmo que não concordem,
+                ou que não tenham fé. Todos aqueles que residem no inferno são
+                pecadores<br /><br />
+                <strong>Maldição/Magia</strong> Todos aqueles que ousam ofender
+                ainda a Deus, escolhem domar a magia do inferno. Aqueles fortes
+                em Maldição podem manipular as forças do inferno. Tudo dependerá
+                de suas habilidades.<br /><br />
+                <strong>Auge/Força</strong> Há aqueles que não aceitam suas
+                punições. Que em vida fizeram do corpo morada de pecados de
+                força. Estes se negam, ainda que no inferno, há deixar de
+                lutar.<br /><br />
+                <strong>Astúcia/Inteligência</strong> A vida mundana não foi
+                capaz de ensinar a estes que suas artimanhas têm limites.<br /><br />
+                <strong>Presteza/Agilidade</strong> Os covardes têm fé que são
+                capazes de desfiar da punição.<br /><br />
+                <strong>Gore/Crueldade</strong> A estes ficam reservados os atos
+                de maior crueldade. Seu ódio, egoísmo e ausência de sobriedade
+                levam aos mais cruéis atos de violência.<br /><br />
+                <strong>Obstinação/Resistência</strong>Nem mesmo as piores
+                torturas foram capazes de acabar com a capacidade destes de
+                encarrarem mais uma rodada.<br /><br />
+                <strong>Violação</strong> Apenas alguns Pecadores foram capazes
+                de conjurar de seus círculos a máxima maldição/auge de seus
+                carrascos. Ela sempre sorri quando estes "nascem". São mais
+                divertidos de matar.<br /><br />
+                <strong>Insanidade</strong> A ofensa tem seu castigo. E os
+                condenados terão isso ao retornarem aos seus círculos.<br /><br />
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- POP-UPS POSTAGENS -->
+      <div class="circulos">
+        <!--LUXURIA-->
+        <div class="luxuria">
+          <button
+            class="btn-circulo btn-luxuria"
+            onclick="showModal('luxuriamodal')"
+          >
+            <span class="span-luxuria"> Luxúria</span>
+          </button>
+          <div class="modal" id="luxuriamodal">
+            <div class="modal-content modal-luxuria">
+              <span onclick="hideModal('luxuriamodal')">&times;</span>
+              <h1 class="h1-popup" id="modal-title">Luxúria</h1>
+              <h3>Onde a Vontade de Perde e o Querer se Toma</h3>
+              <img src="imagens/luxuria.png" alt="" />
+              <p>
+                Aqui moram os condenados por seus desejos. Aqueles que
+                abandonaram o caminho da pureza em prol de tudo o que puderam
+                aproveitar. Os que tomaram, pela sedução, a vontade dos outros.
+                Estes sofrem com a ausência do sabor, do calor, do frio, do
+                começo e do fim. São meros seres arrastados pelo vento.
+              </p>
+              <h3>Condenado Da Luxúria</h3>
+              <div class="vantagens">
+                <div class="vant10">
+                  <h4>Vantagens +10</h4>
+                  <p>Escolha a distribuição dos pontos positivos</p>
+                  <ul>
+                    <li>Maldição</li>
+                    <li>Astúcia</li>
+                    <li>Presteza</li>
+                    <li>Violação</li>
+                  </ul>
+                </div>
+                <div class="des10">
+                  <h4>Desvantagens -10</h4>
+                  <p>Escolha a distribuição dos pontos negativos</p>
+                  <ul>
+                    <li>Auge</li>
+                    <li>Crueldade</li>
+                    <li>Obstinação</li>
+                  </ul>
+                </div>
+                <div class="statusIni">
+                  <h4>Status Iniciais</h4>
+                  <p>Escolha a distribuição dos pontos negativos</p>
+                  <ul>
+                    <li>Vida: 50</li>
+                    <li>Vitalidade: 50</li>
+                  </ul>
+                </div>
+              </div>
+
+              <br /><br />
+              <p>
+                <strong>Natureza da Violação:</strong>Capaz de tomar o controle
+                de outros condenados por um período.
+              </p>
+              <p>
+                <strong>Natureza da Loucura:</strong>Ao perder Vitalidade o
+                Condenado ficará insano, perderá suas vantagens e será um risco
+                para todos. Ela usará sua Violação contra seus aliados.
+              </p>
+
+              <div class="defensor">
+                <h2>Asmodeus</h2>
+                <p>Defensor do Círculo</p>
+                <img src="imagens/asmodeus.png" alt="Asmodeus" />
+                <ul>
+                  <li>Longa Distância</li>
+                  <li>Manipulação</li>
+                </ul>
+              </div>
+              <a class="crie-personagem" href="login.html">
+                Crie um personagem do circulo!
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <!--GULA-->
+        <div class="gula">
+          <button class="btn-circulo btn-gula" onclick="showModal('gulamodal')">
+            <span class="span-gula"> Gula</span>
+          </button>
+          <div class="modal" id="gulamodal">
+            <div class="modal-content">
+              <span onclick="hideModal('gulamodal')">&times;</span>
+              <h1 class="h1-popup" id="modal-title">Gula</h1>
+              <h3>Onde a Imundice fez Morada</h3>
+              <img class="img-gula" src="imagens/gula.png" alt="" />
+              <p>
+                Aqui são punidos todos aqueles que se encheram do que há no
+                mundo para comer e beber. Os glutões que na comida viam o sexual
+                e na bebida a única companhia. Agora se afogam na sujeira
+                eterna. Suas almas são levadas ao extremo pela sujeira, até que
+                apodreçam. São afogados em bebida até que seus sentidos se
+                percam. Suas partes servem de alimento a Belzebu e Cérbero
+              </p>
+              <h3>Condenado Da Gula</h3>
+              <div class="vantagens">
+                <div class="vant10">
+                  <h4>Vantagens +10</h4>
+                  <p>Escolha a distribuição dos pontos positivos</p>
+                  <ul>
+                    <li>Maldição</li>
+                    <li>Obstinação</li>
+                    <li>Auge</li>
+                    <li>Violação</li>
+                  </ul>
+                </div>
+                <div class="des10">
+                  <h4>Desvantagens -10</h4>
+                  <p>Escolha a distribuição dos pontos negativos</p>
+                  <ul>
+                    <li>Presteza</li>
+                    <li>Crueldade</li>
+                    <li>Astúcia</li>
+                  </ul>
+                </div>
+                <div class="statusIni">
+                  <h4>Status Iniciais</h4>
+                  <p>Escolha a distribuição dos pontos negativos</p>
+                  <ul>
+                    <li>Vida: 80</li>
+                    <li>Vitalidade: 50</li>
+                  </ul>
+                </div>
+              </div>
+
+              <br /><br />
+              <p>
+                <strong>Natureza da Violação:</strong>Capaz de consumir partes
+                de demônios de alto nível.
+              </p>
+              <p>
+                <strong>Natureza da Loucura:</strong>Ao perder Vitalidade o
+                Condenado ficará insano, perderá suas vantagens e será um risco
+                para todos. Ela usará sua Violação contra seus aliados.
+              </p>
+
+              <div class="defensor">
+                <h2>Belzebu</h2>
+                <p>Defensor do Círculo</p>
+                <img src="imagens/belzebu.png" alt="Belzeu" />
+                <ul>
+                  <li>Curta Distância</li>
+                  <li>Cerberus</li>
+                </ul>
+              </div>
+              <a class="crie-personagem" href="login.html">
+                Crie um personagem do circulo!
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <!--AVAREZA-->
+        <div class="avareza">
+          <button
+            class="btn-circulo btn-avareza"
+            onclick="showModal('avarezamodal')"
+          >
+            <span class="span-avareza"> Avareza</span>
+          </button>
+          <div class="modal" id="avarezamodal">
+            <div class="modal-content">
+              <span onclick="hideModal('avarezamodal')">&times;</span>
+              <h1 class="h1-popup" id="modal-title">Avareza</h1>
+              <h3>Onde o Tudo se Volta Contra Si</h3>
+              <img class="img-avareza" src="imagens/avareza.png" alt="" />
+              <p>
+                Aqui a ganância é punida. Aqueles que aqui moram são infelizes
+                em suas riquezas. As carregam de um lado para o outro. Sentem a
+                dor, a carne e os músculos se romperem, mas seguem apegos.
+              </p>
+              <h3>Condenado Da Avareza</h3>
+              <div class="vantagens">
+                <div class="vant10">
+                  <h4>Vantagens +10</h4>
+                  <p>Escolha a distribuição dos pontos positivos</p>
+                  <ul>
+                    <li>Maldição</li>
+                    <li>Astúcia</li>
+                    <li>Violação</li>
+                  </ul>
+                </div>
+                <div class="des10">
+                  <h4>Desvantagens -10</h4>
+                  <p>Escolha a distribuição dos pontos negativos</p>
+                  <ul>
+                    <li>Auge</li>
+                    <li>Crueldade</li>
+                    <li>Obstinação</li>
+                    <li>Presteza</li>
+                  </ul>
+                </div>
+                <div class="statusIni">
+                  <h4>Status Iniciais</h4>
+                  <p>Escolha a distribuição dos pontos negativos</p>
+                  <ul>
+                    <li>Vida: 50</li>
+                    <li>Vitalidade: 30</li>
+                  </ul>
+                </div>
+              </div>
+
+              <br /><br />
+              <p>
+                <strong>Natureza da Violação:</strong>Capaz de acumular corpos
+                de almas pequenas.
+              </p>
+              <p>
+                <strong>Natureza da Loucura:</strong>Ao perder Vitalidade o
+                Condenado ficará insano, perderá suas vantagens e será um risco
+                para todos. Ela usará sua Violação contra seus aliados.
+              </p>
+
+              <div class="defensor">
+                <h2>Mammom</h2>
+                <p>Defensor do Círculo</p>
+                <img src="imagens/mammom.png" alt="Mammom" />
+                <ul>
+                  <li>Híbrido</li>
+                  <li>Manipulação</li>
+                </ul>
+              </div>
+              <a class="crie-personagem" href="login.html">
+                Crie um personagem do circulo!
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <!--IRA-->
+        <div class="ira">
+          <button class="btn-circulo btn-ira" onclick="showModal('iramodal')">
+            <span class="span-ira"> Ira</span>
+          </button>
+          <div class="modal" id="iramodal">
+            <div class="modal-content">
+              <span onclick="hideModal('iramodal')">&times;</span>
+              <h1 class="h1-popup" id="modal-title">Ira</h1>
+              <h3>Onde até o Mais dos Orgulhosos Quebra.</h3>
+              <img class="img-ira" src="imagens/ira.png" alt="" />
+              <p>
+                Aqui moram aqueles que em prol de seus destinos recorrem ao uso
+                da força para se colocarem no mundo. Aqueles que o orgulho falou
+                pela imposição de sua vontade no mundo. Abandonaram Deus,
+                rezando apenas aos seus meios. Aqui são levados pela humilhação
+                física e mental. Tudo que se orgulham lhes é tirado.
+              </p>
+              <h3>Condenado Da Ira</h3>
+              <div class="vantagens">
+                <div class="vant10">
+                  <h4>Vantagens +10</h4>
+                  <p>Escolha a distribuição dos pontos positivos</p>
+                  <ul>
+                    <li>Auge</li>
+                    <li>Astúcia</li>
+                    <li>Obstinação</li>
+                    <li>Violação</li>
+                  </ul>
+                </div>
+                <div class="des10">
+                  <h4>Desvantagens -10</h4>
+                  <p>Escolha a distribuição dos pontos negativos</p>
+                  <ul>
+                    <li>Presteza</li>
+                    <li>Crueldade</li>
+                    <li>Maldição</li>
+                  </ul>
+                </div>
+                <div class="statusIni">
+                  <h4>Status Iniciais</h4>
+                  <p>Escolha a distribuição dos pontos negativos</p>
+                  <ul>
+                    <li>Vida: 50</li>
+                    <li>Vitalidade: 50</li>
+                  </ul>
+                </div>
+              </div>
+
+              <br /><br />
+              <p>
+                <strong>Natureza da Violação:</strong>Capaz de tombar qualquer
+                nível de alma na mão livre. Causando grande dano.
+              </p>
+              <p>
+                <strong>Natureza da Loucura:</strong>Ao perder Vitalidade o
+                Condenado ficará insano, perderá suas vantagens e será um risco
+                para todos. Ela usará sua Violação contra seus aliados.
+              </p>
+
+              <div class="defensor">
+                <h2>Azazel</h2>
+                <p>Defensor do Círculo</p>
+                <img src="imagens/azazel.png" alt="Azazel" />
+                <ul>
+                  <li>Corpo a Corpo</li>
+                  <li>Crueldade</li>
+                </ul>
+              </div>
+              <a class="crie-personagem" href="login.html">
+                Crie um personagem do circulo!
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <!--HERESIA-->
+        <div class="heresia">
+          <button
+            class="btn-circulo btn-heresia"
+            onclick="showModal('heresiamodal')"
+          >
+            <span class="span-heresia"> Heresia</span>
+          </button>
+          <div class="modal" id="heresiamodal">
+            <div class="modal-content">
+              <span onclick="hideModal('heresiamodal')">&times;</span>
+              <h1 class="h1-popup" id="modal-title">Heresia</h1>
+              <h3>Onde os Negadores de Deus Encontram o Diabo.</h3>
+              <img class="img-ira" src="imagens/heresia.png" alt="" />
+              <p>
+                Aqueles que negaram a Deus por palavras ou atos. Que se viram
+                melhores e mais poderosos. Que usaram dos menores que bajularam
+                os grandes. A estes o inferno reservou tumbas onde suas mentes e
+                ódios se alimentam de si mesmas.
+              </p>
+              <h3>Condenado Da Heresia</h3>
+              <div class="vantagens">
+                <div class="vant10">
+                  <h4>Vantagens +10</h4>
+                  <p>Escolha a distribuição dos pontos positivos</p>
+                  <ul>
+                    <li>Astúcia</li>
+                    <li>Maldição</li>
+                    <li>Violação</li>
+                  </ul>
+                </div>
+                <div class="des10">
+                  <h4>Desvantagens -10</h4>
+                  <p>Escolha a distribuição dos pontos negativos</p>
+                  <ul>
+                    <li>Presteza</li>
+                    <li>Crueldade</li>
+                    <li>Obstinação</li>
+                    <li>Auge</li>
+                  </ul>
+                </div>
+                <div class="statusIni">
+                  <h4>Status Iniciais</h4>
+                  <p>Escolha a distribuição dos pontos negativos</p>
+                  <ul>
+                    <li>Vida: 40</li>
+                    <li>Vitalidade: 60</li>
+                  </ul>
+                </div>
+              </div>
+
+              <br /><br />
+              <p>
+                <strong>Natureza da Violação:</strong>Capaz de transformar
+                demônios menores em cura para si e seus aliados.
+              </p>
+              <p>
+                <strong>Natureza da Loucura:</strong>Ao perder Vitalidade o
+                Condenado ficará insano, perderá suas vantagens e será um risco
+                para todos. Ela usará sua Violação contra seus aliados.
+              </p>
+
+              <div class="defensor">
+                <h2>Lúcifer</h2>
+                <p>Defensor do Círculo</p>
+                <img src="imagens/lucifer.png" alt="Lúcifer" />
+                <ul>
+                  <li>Indiferente</li>
+                  <li>Manipulação</li>
+                </ul>
+              </div>
+              <a class="crie-personagem" href="login.html">
+                Crie um personagem do circulo!
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <!--VIOLÊNCIA-->
+        <div class="violencia">
+          <button
+            class="btn-circulo btn-violencia"
+            onclick="showModal('violenciamodal')"
+          >
+            <span class="span-violencia"> Violência</span>
+          </button>
+          <div class="modal" id="violenciamodal">
+            <div class="modal-content">
+              <span onclick="hideModal('violenciamodal')">&times;</span>
+              <h1 class="h1-popup" id="modal-title">Violência</h1>
+              <h3>Onde o Verdadeiro Mal Fez Morada.</h3>
+              <img class="img-ira" src="imagens/violencia.png" alt="" />
+              <p>
+                Aqui moram os piores seres que já foramvivos. Seres que vivos
+                não era humanos, mas monstros com sanguenas mãos. Donos de atos
+                de brutalidade,tortura e desgraça contra os mais fracos. São
+                aqueles que nunca irão se arrepender, pois dos sádicos têm no
+                sangue seu maior prazer. Aqui são presos como animais, sádicos
+                torturados como masoquistas, masoquistas violados sem a ilusão
+                de prazer. Ela costuma vir aqui para assistir. Dizem ouvir seus
+                risos ao longe.
+              </p>
+              <h3>Condenado Da Violência</h3>
+              <div class="vantagens">
+                <div class="vant10">
+                  <h4>Vantagens +10</h4>
+                  <p>Escolha a distribuição dos pontos positivos</p>
+                  <ul>
+                    <li>Crueldade</li>
+                    <li>Astúcia</li>
+                    <li>Obstinação</li>
+                    <li>Violação</li>
+                  </ul>
+                </div>
+                <div class="des10">
+                  <h4>Desvantagens -10</h4>
+                  <p>Escolha a distribuição dos pontos negativos</p>
+                  <ul>
+                    <li>Presteza</li>
+                    <li>Maldição</li>
+                    <li>Auge</li>
+                  </ul>
+                </div>
+                <div class="statusIni">
+                  <h4>Status Iniciais</h4>
+                  <p>Escolha a distribuição dos pontos negativos</p>
+                  <ul>
+                    <li>Vida: 70</li>
+                    <li>Vitalidade: 30</li>
+                  </ul>
+                </div>
+              </div>
+
+              <br /><br />
+              <p>
+                <strong>Natureza da Violação:</strong>Capaz de trazer para si
+                demônios de todos os níveis e deles fazer uso do Sangue das
+                Tripas. Uma vez coberta de sangue, sua Vitalidade atinge um novo
+                nível.
+              </p>
+              <p>
+                <strong>Natureza da Loucura:</strong>Ao perder Vitalidade o
+                Condenado ficará insano, perderá suas vantagens e será um risco
+                para todos. Ela usará sua Violação contra seus aliados.
+              </p>
+
+              <div class="defensor">
+                <h2>Aesma Daeva</h2>
+                <p>Defensor do Círculo</p>
+                <img src="imagens/aesmaDaeva.png" alt="Aesma Daeva" />
+                <ul>
+                  <li>Corpo a Corpo</li>
+                  <li>Manipulação</li>
+                </ul>
+              </div>
+              <a class="crie-personagem" href="login.html">
+                Crie um personagem do circulo!
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <!--FRAUDE-->
+        <div class="fraude">
+          <button
+            class="btn-circulo btn-fraude"
+            onclick="showModal('fraudemodal')"
+          >
+            <span class="span-fraude"> Fraude</span>
+          </button>
+          <div class="modal" id="fraudemodal">
+            <div class="modal-content">
+              <span onclick="hideModal('fraudemodal')">&times;</span>
+              <h1 class="h1-popup" id="modal-title">Fraude</h1>
+              <h3>Onde a Inocência foi Renegada.</h3>
+              <img class="img-ira" src="imagens/fraude.png" alt="" />
+              <p>
+                Aqui moram os distorcem. Os que usam da inocência em prol de sua
+                vantagem. Que tinham orgulho em dizerem ser donos da verdade.
+                Aqui são torturados com a visão da culpa. Com a empatia que
+                nunca tiveram.
+              </p>
+              <h3>Condenado Da Fraude</h3>
+              <div class="vantagens">
+                <div class="vant10">
+                  <h4>Vantagens +10</h4>
+                  <p>Escolha a distribuição dos pontos positivos</p>
+                  <ul>
+                    <li>Presteza</li>
+                    <li>Astúcia</li>
+                    <li>Maldição</li>
+                    <li>Violação</li>
+                  </ul>
+                </div>
+                <div class="des10">
+                  <h4>Desvantagens -10</h4>
+                  <p>Escolha a distribuição dos pontos negativos</p>
+                  <ul>
+                    <li>Obstinação</li>
+                    <li>Crueldade</li>
+                    <li>Auge</li>
+                  </ul>
+                </div>
+                <div class="statusIni">
+                  <h4>Status Iniciais</h4>
+                  <p>Escolha a distribuição dos pontos negativos</p>
+                  <ul>
+                    <li>Vida: 50</li>
+                    <li>Vitalidade: 45</li>
+                  </ul>
+                </div>
+              </div>
+
+              <br /><br />
+              <p>
+                <strong>Natureza da Violação:</strong>Capaz de trazer para si
+                demônios de todos os níveis e deles fazer uso
+              </p>
+              <p>
+                <strong>Natureza da Loucura:</strong>Ao perder Vitalidade o
+                Condenado ficará insano, perderá suas vantagens e será um risco
+                para todos. Ela usará sua Violação contra seus aliados.
+              </p>
+
+              <div class="defensor">
+                <h2>Baphomet</h2>
+                <p>Defensor do Círculo</p>
+                <img src="imagens/baphomet.png" alt="Baphomet" />
+                <ul>
+                  <li>Corpo a Corpo</li>
+                  <li>Manipulação</li>
+                </ul>
+              </div>
+              <a class="crie-personagem" href="login.html">
+                Crie um personagem do circulo!
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <!--TRAIÇÃO-->
+        <div class="traicao">
+          <button
+            class="btn-circulo btn-traicao"
+            onclick="showModal('traicaomodal')"
+          >
+            <span class="span-traicao"> Traição</span>
+          </button>
+          <div class="modal" id="traicaomodal">
+            <div class="modal-content">
+              <span onclick="hideModal('traicaomodal')">&times;</span>
+              <h1 class="h1-popup" id="modal-title">Traição</h1>
+              <h3>Ou Aqueles Renegados até por Ela.</h3>
+              <img class="img-ira" src="imagens/traicao.png" alt="" />
+              <p>
+                Aqui estão aqueles que fizeram o contrário de suas palavras. Os
+                que enganaram usando a confiança de próximos. Aqui eles são
+                torturados com a verdade. Ela os mantém próximos, pois é deles o
+                sofrimento que mais a alimenta. Ela os renega e tem nojo de sua
+                falta de palavra.
+              </p>
+              <h3>Condenado Da Traição</h3>
+              <div class="vantagens">
+                <div class="vant10">
+                  <h4>Vantagens +10</h4>
+                  <p>Escolha a distribuição dos pontos positivos</p>
+                  <ul>
+                    <li>Presteza</li>
+                    <li>Astúcia</li>
+                    <li>Violação</li>
+                  </ul>
+                </div>
+                <div class="des10">
+                  <h4>Desvantagens -10</h4>
+                  <p>Escolha a distribuição dos pontos negativos</p>
+                  <ul>
+                    <li>Obstinação</li>
+                    <li>Maldição</li>
+                    <li>Crueldade</li>
+                    <li>Auge</li>
+                  </ul>
+                </div>
+                <div class="statusIni">
+                  <h4>Status Iniciais</h4>
+                  <p>Escolha a distribuição dos pontos negativos</p>
+                  <ul>
+                    <li>Vida: 50</li>
+                    <li>Vitalidade: 60</li>
+                  </ul>
+                </div>
+              </div>
+
+              <br /><br />
+              <p>
+                <strong>Natureza da Violação:</strong>Capaz de tomar tudo,
+                físico ou não. Que há no outro. Por uso de seu amuleto infernal
+              </p>
+              <p>
+                <strong>Natureza da Loucura:</strong>Ao perder Vitalidade o
+                Condenado ficará insano, perderá suas vantagens e será um risco
+                para todos. Ela usará sua Violação contra seus aliados.
+              </p>
+
+              <div class="defensor">
+                <h2>Satanás</h2>
+                <p>Defensor do Círculo</p>
+                <img src="imagens/satanas.png" alt="Satanás" />
+                <ul>
+                  <li>Longa Distância</li>
+                  <li>Manipulação</li>
+                </ul>
+              </div>
+              <a class="crie-personagem" href="login.html">
+                Crie um personagem do circulo!
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- seção DELA -->
+      <div class="ela">
+        <div class="ela-texto">
+          <h2>Ela</h2>
+          <p>É tudo o que os aguarda ao final!</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- RODAPÉ -->
+    <footer class="rodape">
+      <h3>Autores:</h3>
+      <p>Alícia Ribeiro</p>
+      <p>Ana Cajuela</p>
+      <p>Anthenor Fernandes</p>
+      <p>Rillory Teodora</p>
+      <p>Victor Murta</p>
+    </footer>
+  </body>
+</html>

@@ -1,0 +1,155 @@
+@import url("https://fonts.googleapis.com/css2?family=Sevillana&family=Source+Serif+4:ital,opsz,wght@0,8..60,200..900;1,8..60,200..900&family=Yeon+Sung&display=swap");
+
+@import url("https://fonts.googleapis.com/css2?family=Arvo:ital,wght@0,400;0,700;1,400;1,700&family=Sevillana&family=Source+Serif+4:ital,opsz,wght@0,8..60,200..900;1,8..60,200..900&family=Yeon+Sung&display=swap");
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+  min-height: 100vh;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-image: url(imagens/portaoInferno.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+p {
+  font-family: "Arvo", serif;
+  word-wrap: break-word;
+  text-align: center;
+  line-height: 1.5;
+  letter-spacing: normal;
+  margin: 10px 0;
+}
+
+h1,
+h2 {
+  font-size: 50px;
+  font-family: "Yeon Sung", system-ui;
+}
+
+h3 {
+  font-family: "Yeon Sung", system-ui;
+  font-size: 30px;
+}
+h4 {
+  font-family: "Yeon Sung", system-ui;
+  font-size: 20px;
+}
+
+.container-conteudo {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: rgb(0, 0, 0);
+  margin-top: 80px;
+  height: 100vh;
+  background-position: center;
+  flex-direction: column;
+}
+
+/*------------------CABEÇALHO----------------*/
+.cabecalho {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-image: url(imagens/fundoCabecalho.png);
+  background-position: center;
+  background-size: cover;
+  color: rgb(204, 39, 39);
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 80px;
+  padding: 15px 0;
+  z-index: 1000;
+  font-family: "Yeon Sung", system-ui;
+}
+
+/*-------------------LOGIN-----------------*/
+label {
+  color: antiquewhite;
+}
+.login {
+  display: flex;
+  flex-direction: column;
+  font-family: "Yeon Sung", system-ui;
+}
+
+.btn-login {
+  color: white;
+  background-color: red;
+  border-radius: 10px;
+  padding: 5px;
+  width: 80px;
+  height: 40px;
+}
+.btn-login:hover {
+  background-color: rgb(204, 39, 39);
+}
+.btn-cadastro {
+  display: inline-block;
+  text-align: center;
+  text-decoration: none;
+  width: 80px;
+  height: 40px;
+  line-height: 40px;
+  background-color: rgb(255, 119, 7);
+  color: white;
+  border-radius: 10px;
+}
+.btn-cadastro:hover {
+  background-color: rgb(204, 39, 39);
+}
+
+.tituloLog {
+  margin-top: 20px;
+  color: rgb(204, 39, 39);
+}
+
+.btn-voltar{
+  display: inline-block;
+  text-align: center;
+  text-decoration: none;
+  width: 80px;
+  height: 40px;
+  line-height: 40px;
+  background-color: rgb(143, 89, 194);
+  color: white;
+  border-radius: 10px;
+  margin-top: 20px;
+}
+
+.btn-voltar:hover{
+  background-color: rgb(127, 0, 247);
+}
+
+/*------------------RODAPÉ----------------*/
+.rodape {
+  bottom: 0;
+  left: 0;
+  background-image: url(imagens/fundoRodape.png);
+  background-position: center;
+  background-size: cover;
+  color: white;
+  text-align: center;
+  padding: 15px;
+  align-items: center;
+  gap: 30px;
+  display: flex;
+  width: 100%;
+  position: relative;
+  justify-content: center;
+  margin-top: auto;
+}
+
+.rodape p {
+  margin: 0;
+  color: whitesmoke;
+}
